@@ -10,7 +10,8 @@ source('functions.R')
 req.libraries <- c('data.table', 'ape', 'phyclust', 'rrBLUP', 'scatterplot3d', 'rgl', 'ggplot2', 
                    'corrplot', 'plyr', 'multtest', 'gplots', 'LDheatmap', 'genetics', 'compiler',
                    'mapdata', 'maps', 'ggmap')
-lapply(req.libraries, require, character.only = TRUE)
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(req.libraries)
 
 if(!file.exists('project.log')) file.create('project.log')
 
