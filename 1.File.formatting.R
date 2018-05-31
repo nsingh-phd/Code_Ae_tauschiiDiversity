@@ -4,12 +4,10 @@
 ## ################ ##
 
 # load functions and required libraries
-# source("https://bioconductor.org/biocLite.R")
-# biocLite("snpStats")
 source('functions.R')
 req.libraries <- c('data.table', 'ape', 'phyclust', 'rrBLUP', 'scatterplot3d', 'rgl', 'ggplot2', 
                    'corrplot', 'plyr', 'multtest', 'gplots', 'LDheatmap', 'genetics', 'compiler',
-                   'mapdata', 'maps', 'ggmap')
+                   'mapdata', 'maps', 'ggmap', 'snpStats')
 if (!require("pacman")) install.packages("pacman")
 pacman::p_load(req.libraries)
 
