@@ -1,5 +1,7 @@
 ## Repository for scripts and other data analysis protocols for *Aegilops tauschii* diversity project.
 
+This paper has been published and can be found here https://www.frontiersin.org/articles/10.3389/fpls.2019.00009/full
+
 1. Run `Tassel5 GBSv2` pipeline using the provided keyfile in `SNP_calling_scripts` folder to call SNPs.
 2. `required_files` contain files with some required metadata.
 3. Use the `R` scripts to perform a specific analysis.
